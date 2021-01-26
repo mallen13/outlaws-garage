@@ -1,0 +1,80 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+ul{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    color: #a6a6a6;
+    text-decoration: none;
+    transition: 0.4s;
+}
+a:hover{
+    color: #cccccc;
+}
+.active{
+    color: #ffffff;
+}
+
+/*Utilities*/
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.alignEnd{
+    align-items: flex-end;
+}
+
+/*Nav*/
+nav{
+    background-color: #000000;
+    padding: 15px;
+}
+.branding a{
+    color: #ffffff;
+    text-decoration: none;
+}
+nav ul{
+    margin-top: 20px;
+    float: right;
+}
+.mobileMenuLn{
+    width: 25px;
+    height: 2px;
+    background-color: #ff5722;
+    margin-top: 6px;
+}
+
+.heroImage{
+    background-position: center;
+    background-repeat: no-repeat;
+  
+}
+
+.heroText{
+    display: inline-block;
+    /* background-color: lightgray; */
+}
+
+/*Footer*/
+footer{
+    background-color: #000000;
+    color: #a6a6a6;
+    text-align: center;
+}
+
+.footerNavTitle{
+    text-decoration: underline;
+}
+
+.active{
+    color: #ffffff;
+    
+}
