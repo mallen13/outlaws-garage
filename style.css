@@ -1,80 +1,224 @@
-body{
+/*General Styling*/
+*{
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-}
-
-ul{
-    display: inline-block;
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-}
-a{
-    color: #a6a6a6;
-    text-decoration: none;
-    transition: 0.4s;
-}
-a:hover{
-    color: #cccccc;
-}
-.active{
-    color: #ffffff;
-}
-
-/*Utilities*/
-.flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.alignEnd{
-    align-items: flex-end;
-}
-
-/*Nav*/
-nav{
-    background-color: #000000;
-    padding: 15px;
-}
-.branding a{
-    color: #ffffff;
-    text-decoration: none;
-}
-nav ul{
-    margin-top: 20px;
+  }
+  body{
+      margin: 0px;
+      padding: 0px;
+      font-family: "Times New Roman", Times, serif;
+  }
+  li{
+      padding: 5px;
+      list-style-type: none;
+      font-size: 1.1em;
+  }
+  a, a:visited{
+      color: #a6a6a6;
+      text-decoration: none;
+      font-size: 1.1em;
+      transition-duration: 0.5s;
+  }
+  a:hover, a:active{
+      color: #ff5722;
+  }
+  h1{
+      font-size: 2.1em;
+      padding: 5px;
+  }
+  h2{
+      font-size: 1.6em;
+      padding: 5px;
+  }
+  h3{
+     font-size: 1.3em; 
+     padding: 5px;
+  }
+  p{
+      font-size: 1.1em;
+      padding: 5px;
+      line-height: 1.3em;
+  }
+  .active{
+      text-decoration: underline;
+      text-decoration-color: #ff5722;
+  }
+      /*Wraps body so footer always at bottom if not enough content.
+        250px is footer height*/
+  .wrapper{
+    min-height: calc(100vh - 270px);
+  }
+  /*Utilities*/
+  .flex{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+  .row{
+      flex-direction: row;
+  }
+  
+  /*Nav*/
+  nav{
+      background-color: #000000;
+      padding: 30px 20px 30px 20px;
+      margin-bottom: 50px;
+  }
+  .branding{
+      display: inline-block;
+  }
+  .branding a{
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1.8em;
+  }
+    /*Large Device Menu*/
+  .menuLinks{
+    display: none;
     float: right;
 }
-.mobileMenuLn{
-    width: 25px;
-    height: 2px;
-    background-color: #ff5722;
-    margin-top: 6px;
-}
+     /*Mobile Menu Button*/
+  .mobileMenuBtn{
+      float: right;
+      height: 40px;
+  }
+  .mobileMenuLn{
+      width: 30px;
+      height: 3px;
+      background-color: #ff5722;
+      margin-top: 6px;
+  }
+  #menuLn1{
+      margin-top: 7px;
+  }
+    /*Menu Animation*/
+  .animate{
+      animation-name: animate;
+      animation-duration: 1.0s;
+  }
+  .rotateDown45{
+      transform:
+          rotate(45deg)
+          translate(6px, 6px);
+  }
+  .rotateUp45{
+      transform: rotate(-45deg);   
+  }
+  .dissappear{
+      display: none;
+  }
+  @keyframes animate{
+     10% {transform: scaleX(-1)};
+  }
+    /*Mobile Popup Menu*/
+  .popupMenu{
+      display: none;
+      right: 0;
+      position: absolute;
+      z-index: 1;
+      width: 50%;
+      max-width: 300px;
+      background-color: #a6a6a6;
+      box-shadow: 0px 0px 16px 8px rgba(0,0,0,0.2);
+      margin-top: -50px;   
+  }
+  .popupMenu a{
+      color: black;
+      display: block;
+  }
+  .popupMenu li{
+      padding: 10px 0px 10px 30px;
+      transition: 0.7s;
+  }
+  .popupMenu li:hover{
+      background-color: gray;
+  }
 
-.heroImage{
-    background-position: center;
-    background-repeat: no-repeat;
-  
-}
-
-.heroText{
-    display: inline-block;
-    /* background-color: lightgray; */
-}
-
-/*Footer*/
-footer{
-    background-color: #000000;
-    color: #a6a6a6;
+  /*Body Content*/
+  .bodySection{
+      width: 80%;
+      margin: 0px 30px 30px 30px;
+  }
+  .bodySection h1, h2, h3{
     text-align: center;
+  }
+
+  /*Footer*/
+  footer{
+      height: 270px;
+      background-color: #000000;
+      color: #a6a6a6;
+      text-align: center;
+      padding: 20px;
+     
+  }
+  footer ul{
+      padding-bottom: 20px;
+  }
+  footer .companyName{
+      color: #ffffff;
+  }
+  footer .webDevName{
+      color: #ff5722;
+      text-decoration: underline;
+  }
+  footer p{
+      margin: 10px;
+  }
+
+  /*Media Queries*/
+
+  /*Small Device*/
+@media only screen and (min-width: 280px) and (max-width: 320px){
+    .branding a{
+        font-size: 1.5em;
+    }
+    footer{
+        height: 300px;
+    }
 }
 
-.footerNavTitle{
-    text-decoration: underline;
+/*Tablet*/
+@media only screen and (min-width: 768px) {
+    .bodySection{
+        width: 75%;
+        /* max-width: 700px; */
+    }
 }
 
-.active{
-    color: #ffffff;
-    
+
+/*Computer*/
+@media only screen and (min-width: 992px) {
+    .mobileMenuBtn{
+        display: none;
+    }
+    .popupMenu{
+        display: none;
+        z-index: -1;
+        background-color:#ffffff;
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+    }
+    .popupMenu a{ 
+        display: none;
+    }
+    .menuLinks{
+        display: inline;
+        float: right;
+        font-size: 1.1em;
+    }
+    .menuLinks li{
+        display: inline;
+        padding-left: 50px;
+    }
 }
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
+
+
+
