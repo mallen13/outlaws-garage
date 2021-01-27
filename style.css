@@ -88,6 +88,7 @@
   .mobileMenuBtn{
       float: right;
       height: 80px;
+      padding-bottom: 7px;
   }
   .mobileMenuLn{
       width: 30px;
@@ -95,9 +96,7 @@
       background-color: #ff5722;
       margin-top: 6px;
   }
-  #menuLn1{
-      /* margin-top: 7px; */
-  }
+
     /*Menu Animation*/
   .animate{
       animation-name: animate;
