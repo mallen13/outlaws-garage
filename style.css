@@ -51,7 +51,6 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      
   }
   .row{
       flex-direction: row;
@@ -60,20 +59,25 @@
   /*Nav*/
   nav{
       background-color: #000000;
-      padding: 30px 20px 30px 20px;
+      padding: 10px 20px 10px 20px;
       margin-bottom: 50px;
+      overflow: auto;
   }
+    /*Logo & branding*/
   .branding{
       display: inline-block;
+      height: 80px;
+  }
+  .branding p{
+    color: #ff5722;
+    font-size: 1.0em;
+    padding: 0px;
+    text-align: center;
   }
   .branding a{
       color: #ffffff;
       text-decoration: none;
       font-size: 1.8em;
-  }
-  .branding p{
-      color: #ff5722;
-      line-height: 1.3em;
   }
     /*Large Device Menu*/
   .menuLinks{
@@ -83,7 +87,7 @@
      /*Mobile Menu Button*/
   .mobileMenuBtn{
       float: right;
-      height: 40px;
+      height: 80px;
   }
   .mobileMenuLn{
       width: 30px;
@@ -92,7 +96,7 @@
       margin-top: 6px;
   }
   #menuLn1{
-      margin-top: 7px;
+      /* margin-top: 7px; */
   }
     /*Menu Animation*/
   .animate{
@@ -209,10 +213,11 @@
         display: none;
     }
     .menuLinks{
-        display: inline;
-        float: right;
-        font-size: 1.1em;
-        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        font-size: 1.1em;  
+        height: 80px;   
     }
     .menuLinks li{
         display: inline;
