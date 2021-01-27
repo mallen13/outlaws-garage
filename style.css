@@ -48,9 +48,10 @@
   /*Utilities*/
   .flex{
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
+      
   }
   .row{
       flex-direction: row;
@@ -72,6 +73,7 @@
   }
   .branding p{
       color: #ff5722;
+      line-height: 1.3em;
   }
     /*Large Device Menu*/
   .menuLinks{
@@ -211,7 +213,6 @@
         float: right;
         font-size: 1.1em;
         height: 50px;
-        border: 3px solid red;
     }
     .menuLinks li{
         display: inline;
