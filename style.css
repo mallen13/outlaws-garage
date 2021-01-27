@@ -40,10 +40,6 @@
       padding: 5px;
       line-height: 1.3em;
   }
-  .active{
-      text-decoration: underline;
-      text-decoration-color: #ff5722;
-  }
       /*Wraps body so footer always at bottom if not enough content.
         250px is footer height*/
   .wrapper{
@@ -147,7 +143,7 @@
 
   /*Footer*/
   footer{
-      height: 270px;
+      height: 300px;
       background-color: #000000;
       color: #a6a6a6;
       text-align: center;
@@ -167,6 +163,10 @@
   footer p{
       margin: 10px;
   }
+
+  .active{
+    text-decoration: underline;
+}
 
   /*Media Queries*/
 
