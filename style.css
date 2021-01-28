@@ -43,7 +43,8 @@
   img{
       margin: 20px;
       width: 300px;
-  }
+      box-shadow: 0px 0px 4px 4px #ff5722;
+}
       /*Wraps body so footer always at bottom if not enough content.
         270px is footer height*/
   .wrapper{
@@ -66,6 +67,7 @@
       padding: 10px 20px 10px 20px;
       margin-bottom: 30px;
       overflow: auto;
+      box-shadow: 0px 0px 4px 4px #ff5722;
   }
     /*Logo & branding*/
   .branding{
@@ -163,6 +165,7 @@
       color: #a6a6a6;
       padding: 20px;
       text-align: center;
+      box-shadow: 0px 0px 30px #ff5722;
      
   }
   footer ul{
@@ -184,16 +187,21 @@
 }
 
 /*Home Page Specific*/
+.companyNameHeader{
+    text-shadow: 1px 1px #ff5722;
+}
+.companyNameHeader h1{
+    font-size: 2.5m;
+}
+.companyNameHeader h3{
+    font-size: 1.5em;
+}
 
  /*About Page Specific*/
    .aboutImage{
       border-radius: 100px;
-      transition-duration: 0.5s;
+      box-shadow: 0px 0px 4px 4px #ff5722;
    }
-   .aboutImage:hover{
-       width: 210px;
-       box-shadow: 0px 0px 4px 4px lightgray;
-   } 
    .staffCard{
        margin: 20px;
    }
@@ -287,13 +295,19 @@ ul{
     .contactContainer{ /*Contact Page*/
         flex-direction: column;
     }
-    .contactListContainer{
+    .contactListContainer{ /*Contact Page*/
         align-items: center;
         justify-content: center;
     }
-    img{
-        width: 300px;
+    .contactLink{ /*Contact Page*/
+        font-size: 1.0em;
     }
+    img{
+        width: 200px;
+    }
+    .servicesTable, th, td, tr{
+        font-size: 1.0em;
+      }
 }
 
 /*Tablet*/
@@ -307,7 +321,22 @@ ul{
     .headerSection{
         flex-direction: row;
     }
-}
+    img{
+        width: 400px;
+    }
+    .staffPic Img{
+        width: 300px;
+        border-radius: 50%;
+    }
+    .companyHeader{ /*Index.html*/
+        flex-direction: row;
+    }
+    .companyNameHeader h1{
+        font-size: 2.8m;
+    }
+    .companyNameHeader h3{
+        font-size: 1.8em;
+    }
 
 
 /*Computer*/
