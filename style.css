@@ -42,8 +42,7 @@
   }
   img{
       margin: 20px;
-      width: 200px;
-      height: 200px;
+      width: 300px;
   }
       /*Wraps body so footer always at bottom if not enough content.
         270px is footer height*/
@@ -65,7 +64,7 @@
   nav{
       background-color: #000000;
       padding: 10px 20px 10px 20px;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
       overflow: auto;
   }
     /*Logo & branding*/
@@ -184,6 +183,8 @@
     text-decoration: underline;
 }
 
+/*Home Page Specific*/
+
  /*About Page Specific*/
    .aboutImage{
       border-radius: 100px;
@@ -195,6 +196,9 @@
    } 
    .staffCard{
        margin: 20px;
+   }
+   .staffPic Img{
+       width: 200px;
    }
    .reviewStars{
        margin-top: 20px;
@@ -254,8 +258,9 @@ ul{
     border: none;
     margin: 20px;
   }
-.hoursTable th,td{
+.hoursTable th, .hoursTable td{
       padding: 5px;
+      border: none;
   }
 .scheduleButton, .scheduleButton:visited{
     margin: 10px;
@@ -286,6 +291,9 @@ ul{
         align-items: center;
         justify-content: center;
     }
+    img{
+        width: 300px;
+    }
 }
 
 /*Tablet*/
@@ -294,6 +302,9 @@ ul{
         max-width: 500px;
     }
     .staffPic{  /*About Page*/
+        flex-direction: row;
+    }
+    .headerSection{
         flex-direction: row;
     }
 }
