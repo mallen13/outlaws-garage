@@ -218,7 +218,7 @@
        margin: 30px 0px 20px 0px;
    }
    .reviewSolicit a{
-    font-size: 1.0em;
+    font-size: 1.1em;
     text-decoration: underline;
 }
 
@@ -292,6 +292,7 @@ ul{
     .branding a{
         font-size: 1.5em;
     }
+
     .contactContainer{ /*Contact Page*/
         flex-direction: column;
     }
@@ -332,7 +333,7 @@ ul{
         flex-direction: row;
     }
     .companyNameHeader h1{
-        font-size: 2.8m;
+        font-size: 2.8em;
     }
     .companyNameHeader h3{
         font-size: 1.8em;
@@ -341,6 +342,26 @@ ul{
 
 /*Computer*/
 @media only screen and (min-width: 992px) {
+    .branding{
+        height: 80px;
+    }
+    .branding p{
+      font-size: 1.2em;;
+    }
+    .branding a{
+        font-size: 2.0em;
+    }
+    .branding p a{
+      font-size: 1.0.2em;
+    }
+    p{
+        max-width: 700px;
+        font-size: 1.2em;
+    }
+    .reviewSolicit a{
+        font-size: 1.2em;
+        text-decoration: underline;
+    }
     .mobileMenuBtn{
         display: none;
     }
@@ -357,7 +378,7 @@ ul{
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 1.1em;  
+        font-size: 1.2em;  
         height: 80px;   
     }
     .menuLinks li{
@@ -369,6 +390,12 @@ ul{
     }
     .staffPic{ /*About Page*/
         margin: 30px;
+    }
+    .companyNameHeader h1{
+        font-size: 3.5em;
+    }
+    .companyNameHeader h3{
+        font-size: 2.2em;
     }
 }
 
