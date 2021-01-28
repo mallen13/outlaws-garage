@@ -40,6 +40,12 @@
       padding: 5px;
       line-height: 1.3em;
   }
+  img{
+      margin: 20px;
+      width: 200px;
+      height: 200px;
+      border: 2px solid red;
+  }
       /*Wraps body so footer always at bottom if not enough content.
         270px is footer height*/
   .wrapper{
@@ -175,10 +181,58 @@
 
  /*About Page Specific*/
    .aboutImage{
-       width: 200px;
-       height: 100px;
-       border: 2px solid black;
+      border-radius: 100px;
+      transition-duration: 0.5s;
    }
+   .aboutImage:hover{
+       width: 210px;
+       box-shadow: 0px 0px 4px 4px lightgray;
+   } 
+   .staffCard{
+       margin: 20px;
+   }
+   .reviewStars{
+       margin-top: 20px;
+   }
+   .reviewText{
+       color: black;
+   }
+
+ /*Services Page Specific*/
+  table, th, td{
+    font-size: 1.1em;
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+    margin: 20px;
+  }
+  th,td{
+      padding: 5px;
+  }
+  th{
+      background-color: #ff5722;
+      color: white;
+  }
+  .tableStripe{
+      background-color: #edf1f7;
+  }
+
+  /*Contact Page Specific*/
+
+.contactLink, .contactLink:visited{
+      color: #000000;
+      transition-duration: 0.5s
+  }
+.contactLink:hover, .contactLink:active{
+    color: #000000;
+    font-size: 1.2em;
+}
+.contactSVG{
+    margin: 10px;
+}
+.hoursList{
+    margin: 20px;
+}
+
 
   /*Media Queries*/
 
@@ -193,6 +247,12 @@
 @media only screen and (min-width: 768px) {
     p{
         max-width: 500px;
+    }
+    .staffPic{  /*About Page*/
+        flex-direction: row;
+    }
+    .contactContainer{ /*Contact Page*/
+        flex-direction: row;
     }
 }
 
@@ -222,25 +282,18 @@
         display: inline;
         padding-left: 50px;
     }
+    .staffCard{  /*About Page*/
+        flex-direction: row;
+    }
+    .staffPic{ /*About Page*/
+        margin: 30px;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
 }
-
-/*Services Page*/
-  table{
-    font-size: 1.1em;
-    border: 1px solid black;
-    border-collapse: collapse;
-  }
-  th{
-      border: 1px solid black;
-  }
-  td{
-      border: 1px solid black;
-  }
 
   
 
