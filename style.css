@@ -44,7 +44,6 @@
       margin: 20px;
       width: 200px;
       height: 200px;
-      border: 2px solid red;
   }
       /*Wraps body so footer always at bottom if not enough content.
         270px is footer height*/
@@ -83,6 +82,12 @@
       color: #ffffff;
       text-decoration: none;
       font-size: 1.8em;
+  }
+  .branding p a{
+    color: #ff5722;
+    font-size: 1.0em;
+    padding: 0px;
+    text-decoration: underline;
   }
     /*Large Device Menu*/
   .menuLinks{
@@ -197,40 +202,73 @@
    .reviewText{
        color: black;
    }
+   .reviewSolicit{
+       margin: 30px 0px 20px 0px;
+   }
+   .reviewSolicit a{
+    font-size: 1.0em;
+    text-decoration: underline;
+}
 
  /*Services Page Specific*/
-  table, th, td{
+  .servicesTable, th, td, tr{
     font-size: 1.1em;
-    border: 1px solid lightgray;
+    border: 1px solid #c7c6c6;
     border-collapse: collapse;
     margin: 20px;
   }
-  th,td{
+  .servicesTable th,td{
       padding: 5px;
   }
-  th{
+  .servicesTable th{
       background-color: #ff5722;
       color: white;
   }
-  .tableStripe{
+  .servicesTable .tableStripe{
       background-color: #edf1f7;
   }
 
   /*Contact Page Specific*/
-
+  .contactListContainer{
+      align-items: flex-start;
+  }
 .contactLink, .contactLink:visited{
       color: #000000;
-      transition-duration: 0.5s
   }
 .contactLink:hover, .contactLink:active{
     color: #000000;
-    font-size: 1.2em;
+    text-decoration: underline;
 }
 .contactSVG{
     margin: 10px;
 }
 .hoursList{
     margin: 20px;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+.hoursTable, th, td{
+    border-collapse: collapse;
+    border: none;
+    margin: 20px;
+  }
+.hoursTable th,td{
+      padding: 5px;
+  }
+.scheduleButton, .scheduleButton:visited{
+    margin: 10px;
+    border: 1px solid #000000;
+    padding: 5px;
+    background-color: #ff5722;
+    color: #ffffff;
+    transition: 0s;
+}
+
+.scheduleButton:hover, .scheduleButton:active{  
+    color: #ffffff;
+    background-color: #fa6f45;
 }
 
 
@@ -241,6 +279,13 @@
     .branding a{
         font-size: 1.5em;
     }
+    .contactContainer{ /*Contact Page*/
+        flex-direction: column;
+    }
+    .contactListContainer{
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 /*Tablet*/
@@ -249,9 +294,6 @@
         max-width: 500px;
     }
     .staffPic{  /*About Page*/
-        flex-direction: row;
-    }
-    .contactContainer{ /*Contact Page*/
         flex-direction: row;
     }
 }
