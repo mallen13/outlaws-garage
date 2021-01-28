@@ -72,7 +72,6 @@
     color: #ff5722;
     font-size: 1.0em;
     padding: 0px;
-    text-align: center;
   }
   .branding a{
       color: #ffffff;
@@ -153,9 +152,9 @@
   footer{
       height: 300px;
       background-color: #000000;
-      color: #a6a6a6;
-      text-align: center;
+      color: #a6a6a6;x
       padding: 20px;
+      text-align: center;
      
   }
   footer ul{
@@ -214,7 +213,7 @@
     .menuLinks{
         display: flex;
         justify-content: center;
-        align-items: center; 
+        align-items: center;
         font-size: 1.1em;  
         height: 80px;   
     }
@@ -228,6 +227,19 @@
 @media only screen and (min-width: 1200px) {
 
 }
+
+/*Services Page*/
+  table{
+    font-size: 1.1em;
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th{
+      border: 1px solid black;
+  }
+  td{
+      border: 1px solid black;
+  }
 
 
 
