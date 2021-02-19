@@ -85,8 +85,8 @@ li{
       justify-content: space-between;
   }
 
-  nav h1{
-    color: orange;
+  nav p{
+    color: #ff5722;
   }
 
     /*Logo & branding*/
@@ -317,6 +317,7 @@ nav img {
     background-color: #ff5722;
     color: #ffffff;
     transition: 0s;
+    border-radius: 5px;
   }
 
   .scheduleButton:hover, .scheduleButton:active{  
