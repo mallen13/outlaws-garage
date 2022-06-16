@@ -1,5 +1,5 @@
 # Outlaws_Garage
-Outlaws Garage (https://www.outlawsgaragemi.com) is a mobile mechanic business. The static website contains information about the company, it's staff, and information about how to schedule auto repair service. 
+Outlaws Garage (https://mallen13.github.io/outlaws-garage) is a mobile mechanic business. The static website contains information about the company, it's staff, and information about how to schedule auto repair service. 
 
 Design of the website is all original and is built using HTML, CSS, and JavaScript. Colors and fonts were chosen to make the website stand-out while also being easy to read and focus on. 
 
